@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Denis Urías Rodríguez García">
+	<meta name="description" content="Página especialmente para los amntes de la lectura">
+	<title>BookWise</title>
+	<link rel="icon"  type="imagenes/iconP.jpg" href="imagenes/iconP.jpg">
+	<!---------Estilos CSS--------------------------------------------------->
+	<link rel="stylesheet" type="text/css"  href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	
+	<!---------Librerías JS--------------------------------------------------->
+	<script src="js/metodo.js"></script>
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!---<link rel="stylesheet" href="https://getbootstrap.com/dist/css/bootstrap.min.css">--->
+	<!-------------------------------------------------------------------------->
+
+	<!-------Funciones js----------------------------------------------------->
+	<script type="text/javascript">
+		 $( function() {
+         $( "#tabs" ).tabs();
+         } );
+	</script>
+
+</head>
+<body>
+<!-----------------Inicio del nav------------------------------->
+<header>
+ <div class="">
+    <h1 class="book-wise">
+      BookWise
+    </h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark letra-Nav">
+      <a href="#">
+        <img class="imgP" src="imagenes/iconP.jpg" >
+      </a>
+      <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+        <a href="#" class="nav-link">
+          Inicio
+        </a>
+        </li>
+        <li class="nav-item active">
+        <a href="usuario.html" class="nav-link">
+          Perfil
+        </a>
+        </li>
+        <li class="nav-item active dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown10">
+          Libros
+		</a>
+		<div class="dropdown-menu" aria-labelledby="dropdown10">
+            <a class="dropdown-item" href="#">Aventura</a>
+            <a class="dropdown-item" href="#">Romance</a>
+            <a class="dropdown-item" href="#">Poema</a>
+          </div>
+        </li>
+        <li class="nav-item active" >
+        <a href="#" class="nav-link">
+          Autores
+        </a>
+        </li>
+        <li class="nav-item active">
+        <a href="#contacto" class="nav-link">
+          Contactanos
+        </a> 
+        </li>
+      </ul>
+     <form>
+      <input type="search" name="buscar" value="Buscar">
+      <button class="boton-search" type="submit" >Buscar</button>
+     </form>
+    </div>
+    </nav>
+  </div>
+  </header>
+  <br>
+  <!----<main>
+	<div class=" row">
+	<div class="div-fra">
+		<p class="fra ">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto totam illo laudantium hic eum expedita, molestias enim iure optio libero consequatur numquam iste nam voluptatibus commodi a odit reiciendis?
+		</p>
+	</div>
+---->
+<!-------------------tabs------------------------------------------------->
+<!--<section class="section">
+<div id="tabs" class="div-table">
+	<ul class="div-ul nav">
+		<li class="div-ul-li">
+			<a href="#tabs-1">Aventura</a>
+		</li>
+		<li class="div-ul-li">
+			<a href="#tabs-2">Romance</a>
+		</li>
+		<li class="div-ul-li">
+			<a href="#tabs-3">Poema</a>
+		</li>
+	</ul>
+    <div id="tabs-1" class="div-table">
+		<table>
+			<tr>
+				<td>
+					<a href="#">
+					<img src="imagenes/Aventura/excalibur.jpeg" alt="Excalibur" title="Excalibur">
+					</a>
+				</td>
+				<td>
+					<img src="imagenes/Aventura/grandesaventuras.jpeg">
+				</td>
+				<td>
+					<img src="imagenes/Aventura/lasagadeloslongevos.jpeg">	
+				</td>
+				<td>
+					<img src="imagenes/Aventura/lasaventurasdeolivercrow.jpeg">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="imagenes/Aventura/laspruebasdeapolo.jpeg">
+				</td>
+				<td>
+					<img src="imagenes/Aventura/Loshijosdelreyvikingo.jpeg">
+				</td>
+				<td>
+					<img src="imagenes/Aventura/loshijosdelreyvikingoElsaqueo.jpeg">
+				</td>
+				<td>
+					<img src="imagenes/Aventura/viajealcentrodelatierra.jpeg">
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id= "tabs-2" class="div-table">
+		<table >
+			<tr>
+				<td>
+					<img src="imagenes/Romance/Adosmetrosdeti.jpeg">
+				</td>
+				<td>
+					<img src="imagenes/Romance/ApuestoYMaldito.jpeg">
+				</td>
+				<td>
+					<img src="imagenes/Romance/ElAmorHueleAcafe.jpeg">
+				</td>
+				<td>
+					<img src="imagenes/Romance/Elbebenodeseado.jpeg">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="imagenes/Romance/LaladronadeLibros.png">
+				</td>
+				<td>
+					<img src="imagenes/Romance/MalditoRomeo.jpeg">
+				</td>
+				<td>
+					<img src="imagenes/Romance/PidemeLoquequieras.jpeg">
+				</td>
+				<td>
+					<img src="imagenes/Romance/PorSiemprejamas.jpeg">
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="tabs-3">
+	<table>
+		<tr>
+			<td>
+				<img src="imagenes/Poema/20Poemasdeamor.jpeg">
+			</td>
+			<td>
+				<img src="imagenes/Poema/AntologiaPoetica.jpeg">
+			</td>
+			<td>
+				<img src="imagenes/Poema/ellibroescuela.jpeg">
+			</td>
+			<td>
+				<img src="imagenes/Poema/labellezadelmarido.jpeg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="imagenes/Poema/lasaventurasdeolivercrow.jpeg">
+			</td>
+			<td>
+				<img src="imagenes/Poema/laspruebasdeapolo.jpeg">
+			</td>
+			<td>
+				<img src="imagenes/Poema/poesiacompletas.jpeg">
+			</td>
+			<td>
+				<img src="imagenes/Poema/primerodepoeta.jpeg">
+			</td>
+		</tr>
+	</table>
+	</div>
+</div>
+</section>--->
+	<!------------------------------------------------------------------->
+<!---</div>
+	<section><h1>Este es una seccion</h1></section>
+	
+	</main>---->
+	
+	<!---<main>
+		<aside>
+		<div class="container">
+		<iframe class="responsive-iframe" src="https://youtube.com/embed/playlist?list=PLcQLeMolblQA5QK6stzmD7NEdAO8wfqvj" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</aside>
+		 <br>
+		 <section class="section-one">
+		<div class="container div-fra">
+			<p class="responsive-iframe ">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto totam illo laudantium hic eum expedita, molestias enim iure optio libero consequatur numquam iste nam voluptatibus commodi a odit reiciendis?
+			</p>
+		</div>--->
+		<!---<div id="tabs" class=" ">
+			<ul class="div-ul nav">
+				<li class="div-ul-li">
+					<a href="#tabs-1">Aventura</a>
+				</li>
+				<li class="div-ul-li">
+					<a href="#tabs-2">Romance</a>
+				</li>
+				<li class="div-ul-li">
+					<a href="#tabs-3">Poema</a>
+				</li>
+			</ul>
+			<div id="tabs-1" class="div-table">
+				<table>
+					<tr>
+						<td>
+							<a href="#">
+							<img src="imagenes/Aventura/excalibur.jpeg" alt="Excalibur" title="Excalibur">
+							</a>
+						</td>
+						<td>
+							<img src="imagenes/Aventura/grandesaventuras.jpeg">
+						</td>
+						<td>
+							<img src="imagenes/Aventura/lasagadeloslongevos.jpeg">	
+						</td>
+						<td>
+							<img src="imagenes/Aventura/lasaventurasdeolivercrow.jpeg">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="imagenes/Aventura/laspruebasdeapolo.jpeg">
+						</td>
+						<td>
+							<img src="imagenes/Aventura/Loshijosdelreyvikingo.jpeg">
+						</td>
+						<td>
+							<img src="imagenes/Aventura/loshijosdelreyvikingoElsaqueo.jpeg">
+						</td>
+						<td>
+							<img src="imagenes/Aventura/viajealcentrodelatierra.jpeg">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id= "tabs-2" class="div-table">
+				<table >
+					<tr>
+						<td>
+							<img src="imagenes/Romance/Adosmetrosdeti.jpeg">
+						</td>
+						<td>
+							<img src="imagenes/Romance/ApuestoYMaldito.jpeg">
+						</td>
+						<td>
+							<img src="imagenes/Romance/ElAmorHueleAcafe.jpeg">
+						</td>
+						<td>
+							<img src="imagenes/Romance/Elbebenodeseado.jpeg">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="imagenes/Romance/LaladronadeLibros.png">
+						</td>
+						<td>
+							<img src="imagenes/Romance/MalditoRomeo.jpeg">
+						</td>
+						<td>
+							<img src="imagenes/Romance/PidemeLoquequieras.jpeg">
+						</td>
+						<td>
+							<img src="imagenes/Romance/PorSiemprejamas.jpeg">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="tabs-3" class="div-table">
+			<table>
+				<tr>
+					<td>
+						<img src="imagenes/Poema/20Poemasdeamor.jpeg">
+					</td>
+					<td>
+						<img src="imagenes/Poema/AntologiaPoetica.jpeg">
+					</td>
+					<td>
+						<img src="imagenes/Poema/ellibroescuela.jpeg">
+					</td>
+					<td>
+						<img src="imagenes/Poema/labellezadelmarido.jpeg">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imagenes/Poema/lasaventurasdeolivercrow.jpeg">
+					</td>
+					<td>
+						<img src="imagenes/Poema/laspruebasdeapolo.jpeg">
+					</td>
+					<td>
+						<img src="imagenes/Poema/poesiacompletas.jpeg">
+					</td>
+					<td>
+						<img src="imagenes/Poema/primerodepoeta.jpeg">
+					</td>
+				</tr>
+			</table>
+			</div>
+		</div>--->
+		 <!---</section>
+	</main>
+	<br>----->
+	
+	<!------------------------------------------------------------------->
+	<main>
+		
+        <!-------------------------------------------------->
+		<!--------------------------primera section-------------->
+		<section>
+			<div class="div-parrafo">
+				<p class="contenidop">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolorem ducimus fuga nobis id autem aliquam, sunt totam dolor? Mollitia autem labore hic expedita aspernatur nihil fugiat iure error tempora.
+				</p>
+			</div>
+		</section>
+		<section>
+			
+			<div id="tabs" class="div-ul">
+				<ul class="div-ul-ul nav">
+					<li class="div-ul-li">
+						<a style="color: black;" href="#tabs-1">Aventura</a>
+					</li>
+					<li class="div-ul-li">
+						<a style="color: black;" href="#tabs-2">Romance</a>
+					</li>
+					<li class="div-ul-li">
+						<a style="color: black;" href="#tabs-3">Poema</a>
+					</li>
+				</ul>
+				<div id="tabs-1" class="divtabla">
+					<table class="divtabla">
+						<tr>
+							<td>
+								<a href="#">
+								<img src="imagenes/Aventura/excalibur.jpeg" alt="Excalibur" title="Excalibur">
+								</a>
+							</td>
+							<td>
+								<a href="#">
+								<img src="imagenes/Aventura/grandesaventuras.jpeg" alt="Grandes Aventuras" title="Grandes Aventuras">
+								</a>
+							</td>
+							<td>
+								<a href="#">
+								<img src="imagenes/Aventura/lasagadeloslongevos.jpeg" alt="La saga de los Longevos" title="La saga de los Longevos">	
+                                </a>
+							</td>
+							<td>
+								<a href="#">
+								<img src="imagenes/Aventura/lasaventurasdeolivercrow.jpeg" alt="Las Aventuras de Oliver Crow" title="Las Aventuras de Oliver Crow">
+							    </a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">
+								<img src="imagenes/Aventura/laspruebasdeapolo.jpeg" alt="Las pruebas de Apolo" title="Las pruebas de Apolo">
+								</a>
+							</td>
+							<td>
+								<a href="#">
+								<img src="imagenes/Aventura/Loshijosdelreyvikingo.jpeg" alt="Los hijos del Rey Vikingo" title="Los hijos del rey Vikinfo">
+								</a>
+							</td>
+							<td>
+								<a href="#">
+								<img src="imagenes/Aventura/loshijosdelreyvikingoElsaqueo.jpeg" alt="Los hijos del rey vikingo el saqueo" title="Los hijos del rey vikingo el saqueo">
+								</a>
+							</td>
+							<td>
+								<a href="#">
+								<img src="imagenes/Aventura/viajealcentrodelatierra.jpeg" alt="Viaje al centro de la tierra" title="Viaje al centro de la tierra">
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id= "tabs-2" class="divtabla">
+					<table class="divtabla" >
+						<tr>
+							<td>
+								<a href="#">
+								<img src="imagenes/Romance/Adosmetrosdeti.jpeg" alt="A dos metros de ti" title="A dos metro de ti">
+								</a>
+							</td>
+							<td>
+								<a href="#">
+								<img src="imagenes/Romance/ApuestoYMaldito.jpeg" alt="Apuesto y maldito" title="Apuesto y maldito">
+								</a>
+							</td>
+							<td>
+								<a href="#">
+								<img src="imagenes/Romance/ElAmorHueleAcafe.jpeg" alt="El amor huele a cagfe" title="El amoir huele a cafe">
+								</a>
+							</td>
+							<td>
+								<a href="#">
+								<img src="imagenes/Romance/Elbebenodeseado.jpeg" alt="El beb no deseado" title="El bebe no deseado">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">
+								<img src="imagenes/Romance/LaladronadeLibros.png" alt="La ladrona de libros" title="La ladrona de libros">
+								</a>
+							</td>
+							<td>
+								<a href="#">
+								<img src="imagenes/Romance/MalditoRomeo.jpeg" alt="Maldito Romeo" title="Maldito Romeo">
+								</a>
+							</td>
+							<td>
+								<a href="#">
+								<img src="imagenes/Romance/PidemeLoquequieras.jpeg" alt="Pideme lo que quieras" title="Pideme lo que quiera">
+								</a>
+							</td>
+							<td>
+								<a href="#">
+								<img src="imagenes/Romance/PorSiemprejamas.jpeg" alt="Por simpre jamas" title="Por siempre jamas">
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="tabs-3" class="divtabla">
+				<table class="divtabla">
+					<tr>
+						<td>
+							<a href="#">
+							<img src="imagenes/Poema/20Poemasdeamor.jpeg" alt="20 poemas de amor" title="20 poemas de amor">
+							</a>
+						</td>
+						<td>
+							<a href="#">
+							<img src="imagenes/Poema/AntologiaPoetica.jpeg" alt="Antologia poetica" title="Antologia poetica">
+							</a>
+						</td>
+						<td>
+							<a href="#">
+							<img src="imagenes/Poema/ellibroescuela.jpeg" alt="El libro Escuela" title="El libro escuela">
+							</a>
+						</td>
+						<td>
+							<a href="#">
+							<img src="imagenes/Poema/labellezadelmarido.jpeg" alt="La belleza del marido" title="La belleza del marido">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#">
+							<img src="imagenes/Poema/lasaventurasdeolivercrow.jpeg" alt="Las aventuras de Oliver Crow " title="LAs aventuras de Oliver Crow">
+							</a>
+						</td>
+						<td>
+							<a href="#">
+							<img src="imagenes/Poema/laspruebasdeapolo.jpeg" alt="Las pruebas de Apolo" title="Las pruebas de Apolo">
+							</a>
+						</td>
+						<td>
+							<a href="#">
+							<img src="imagenes/Poema/poesiacompletas.jpeg" alt="Poesia completas" title="Poesia Completas">
+							</a>
+						</td>
+						<td>
+							<a href="#">
+							<img src="imagenes/Poema/primerodepoeta.jpeg" alt="Primero de poeta" title="Primero de poeta">
+							</a>
+						</td>
+					</tr>
+				</table>
+				</div>
+			</div>
+               
+		</section>
+		<!-------------------------------------------------------->
+		<!--Tercer section-->
+		<section>
+			<div class="divnew">
+				<div class="div-carousel">
+					<!------------------------------>
+					<div class="bg-dark text-center ">
+						<h2>
+						NEWS
+					    </h2>
+					</div>
+					<!----------------------------->
+				
+			<div id="my" class="div-carousel carousel slide" data-ride="carousel">
+				<!------------------------------>		
+		     <ol class="carousel-indicators">
+			      <li data-target="#my" data-slide-to="0" class=""></li>
+			      <li data-target="#my" data-slide-to="1" class=""></li>
+			      <li data-target="#my" data-slide-to="2" class="active"></li>
+			 </ol>
+			 <!---------------------->
+						<!------------------------->
+						<div class="carousel-inner div-carousel">
+							<div class="carousel-item noti-div div-carousel">
+								<svg class="bd-placeholder-img" width="200%" height="200%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="200%" height="200%" fill="green"></rect></svg>
+								  <div class="div-carousel">
+									<div class="carousel-caption ">
+	  
+									<a href="https://aristeguinoticias.com/2711/kiosko/fil-2020-llega-la-fiesta-de-los-libros-a-las-pantallas/" target="_BLANK">	<img class="img-new" class="img-noti" src="imagenes/Noticias/noti1.jpg">
+						           <h5 class="div-new-letra">
+							       FIL 2020: Llega la fiesta de los libros... a las pantallas
+						          </h5>
+						          </a>
+	  
+									</div>
+								</div>
+							</div>
+							<!------------------>
+							<!------------------------->
+							<div class="carousel-item div-carousel">
+								<svg class="bd-placeholder-img" width="200%" height="200%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="200%" height="200%" fill="green"></rect></svg>
+								<div class="div-carousel">
+				<div class="carousel-caption">
+				  
+				 <a href="https://www.elsiglodetorreon.com.mx/noticia/1781542.con-libro-rinden-homenaje-al-instituto-18-de-marzo-de-gomez-palacio.html" target="_BLANK">
+				  <img class="img-new" src="imagenes/Noticias/noti2.jpg">
+				  <h5 class="div-new-letra">
+					Con libro, rinden homenaje al Instituto 18 de Marzo de Gómez Palacio
+				  </h5>
+				</a>
+	  
+				</div>
+			  </div>
+							</div>
+							<!------------------------------>
+							<div class="carousel-item div-carousel active">
+			  <svg class="bd-placeholder-img" width="200%" height="200%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="200%" height="200%" fill="green"></rect></svg>
+			  <div class="div-carousel">
+				<div class="carousel-caption">
+	  
+				 <a href="https://www.excelsior.com.mx/nacional/participa-titular-de-la-sep-en-el-coloquio-los-libros-de-texto-gratuitos/1419191" target="_BLANK">
+				 <img class="img-new" src="imagenes/Noticias/noti3.jpg">
+	  
+				 <h5 class="div-new-letra">
+				   Participa Titular de la SEP en el coloquio Los Libros de Texto Gratuitos
+				 </h5>
+				 </a>
+				</div>
+			  </div>
+			</div>
+			<!---------------------------------------->
+			<a class="carousel-control-prev" href="#my" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next " href="#my" role="button" data-slide="next">
+			<span class="carousel-control-next-icon " aria-hidden="true"></span>
+			<span class="sr-only ">Next</span>
+		  </a>
+			</div>
+		</section>
+		<!-------------Contenido del aside--------------->
+		<aside class="asideleft" >
+			<div class="divaside">
+			<iframe class="iframevi" src="https://youtube.com/embed/playlist?list=PLcQLeMolblQA5QK6stzmD7NEdAO8wfqvj" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+		</div>
+		<h3> ¿Te gustaría aprender sobre el desarroollo web?</h3>
+		<p style="text-align: center;">Esta página o organización se dedica a ayudar aquellos quue necesitan de conocimientos,<br>
+			 por se a creado una página en donde encontraras la mejor lectura o libro, <br>
+			los mejores autores, hoy en día la gente no se dedica a leer unos minutos al día, <br>
+		otros si les encanta, pero algunos precios no son muy agradables para nuestros<br>
+	bolsillos, pero aqui encontrara el mejor precio en libros dígitales.<br><br>
+	Por lado, hemos visto que aparte de tener entretenimiento con la lectura, se nos <br>
+	ocurrio que talves te puedas entretener más, con un poco de desarrollo web. <br>
+	Es de mi agrado informales es esto del desarrollo web es hoy en día muy <br>
+	utilizado, es el futuro, muchas empresas reconocidas se dedican a esto. En fin, <br>
+	le hemos dejado una lista de 14 videos de como aprender html, css, espero y les <br>
+	 ayude en un futuro.</p>
+	 <div class="text-center">
+		<h2 class="destacado">
+			Lo más destacado
+		</h2>
+	<a style="font-weight: 900; color: black;" href="#">
+	<img class="imgdestacado" src="imagenes/Romance/LaladronadeLibros.png">
+	<figcaption>
+	  <small style="color: black;" class="lodestacado">
+		La ladrona de libros
+	  </small>
+	</figcaption>
+	</a>
+	</div>
+	
+			</aside>
+	</main>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<hr color="black" size="20">
+	<footer>
+		<!------------------------------------->
+		<div class="ancho">
+			<div class="div-contacto col-lg-6">
+					<h2 class="text-center">Contacto</h2>
+			  
+				<div class="tel-con">
+				  <p>
+					 telefono: 9331580264.
+				  </p>
+				</div>
+				  <div class="face-book face-con">
+				  <a href="#">
+				  <p>
+					<img class="iconfacebook" src="imagenes/facebook-icon.svg.png">
+					BookWise
+				  </p>
+				</a>
+				</div>
+			  <div class="ali con-con">
+				<p>
+				  uriaselyuyo@gmail.com
+				</p>
+			  </div>
+			  <div class="ali con-con">
+				<p>
+				  Ejido la Chonita Cunduácan Tabasco
+				</p>
+			  </div>
+			</div>
+			<!-------------------------------------->
+			  <div class="div-sugerencias ">
+					<h2>Sugerencias</h2>
+			
+					<form class="div-form">
+					<textarea class="textareas">      
+				</textarea>
+				<br>
+				<input class="enviar" type="button" value="Enviar">
+					</form>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

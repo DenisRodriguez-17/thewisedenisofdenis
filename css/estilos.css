@@ -1,0 +1,379 @@
+/*Estes es por defecto, por algun navegador tiene margin*/
+*{
+	margin: 0px;
+}
+
+/*------------------------------------------------------*/
+/*--------------Este es el body--------------------------------*/
+body{
+	background-image: url("../imagenes/body.jpg");
+}
+/*-------------------------------------------------------------*/
+/*-------------Este es el nombre o titulo de la empresa-----------------*/
+.book-wise{
+	font-family: cursive;
+	text-shadow: 30px 5px 1px rgb(192, 180, 180);
+	 background: wheat;
+	 border: 10px solid rgb(255, 0, 200);
+	 border-radius: 30px;
+     
+}
+/*-------------------------------------------------------------*/
+/*--------------Este es el main, aqui ira nuestro contenido-------------------------------*/
+main{
+	background-image: url("../imagenes/fondoestrella.jpg");
+	margin: auto;
+	
+}
+/*------------Aqui ira la section----------------------------*/
+section{
+	border: 5px solid rgb(0, 0, 0);
+	width: 600px;
+	
+}
+.div-parrafo{
+   background: rgb(145, 167, 148);
+   border-radius: 10%;
+   width: 100%; 
+}
+.contenidop{
+	margin: 10px;
+}
+/*-------------------------------------------------------------*/
+/*--------------Este es el icono de la página adentro del menu y boton del buscador----*/
+.imgP{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+}
+.boton-search{
+	border-radius: 15%;
+	background: blue;
+	animation: padding 0.2s;
+}
+.boton-search:hover{
+	padding: 5px;
+}
+/*--------------Aqui va el contenido del aside---------*/
+.asideleft{
+	float: right;
+	background:rosybrown;
+	position: absolute;
+	margin-top: -890px;
+	margin-left: 890px;
+	
+}
+.divaside{
+	position: relative;
+	width: 600px;
+	height: 400px;
+	background: red;
+}
+.iframevi{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+/*     Tabla de imagenes  */
+img{
+	height: 200px;
+	width: 140px;
+}
+.div-ul{
+	width: 100%;
+	background: rgb(0, 253, 127);
+}
+.div-ul-ul{
+	width: 100%;
+	background: rgb(160, 160, 3);
+
+}
+.div-ul-li{
+	font-weight: 900;
+	color: rgba(0, 0, 0, 0.829);
+     background: blue;
+	width: 196.5px;
+	text-align: center;
+}
+.divtabla{
+	width: 100%;
+}
+/*Destacado*/
+.lodestacado{
+	font-size: x-large;
+}
+.destacado{
+	font-weight: 900;
+}
+.imgdestacado{
+	width: 200;
+	height: 250;
+}
+/* Noticias*/
+.divnew{
+	height: 350px;
+	width: 100%;
+}
+.div-carousel{
+height: 100%;
+margin: 0px;
+}
+.div-new-letra{
+	font-size: x-large;
+	color: rgb(15, 15, 15);
+}
+.img-new{
+	width: 300px;
+}
+/*-----Contactos--------*/
+.ancho{
+	width: 100%;
+	background: blue;
+}
+.div-contacto{
+
+	float: left;
+	width: 50%;
+	background: rgb(151, 174, 194);
+	
+}
+.iconfacebook{
+	
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+/*------------sugerenciuas*/
+.div-sugerencias{
+	width:50%;
+	float: right;
+	text-align: center;
+	background: rgb(243, 57, 218);
+}
+.textareas{
+	width: 400px;
+	height: 148px;
+}
+.enviar{
+	border-radius: 30%;
+	background: rgb(0, 0, 255);
+	animation: padding 0.5s;
+}
+.enviar:hover{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+/*---------------------------------------------------*/
+@media(max-width: 768px){
+	.asideleft{
+        float: none;
+        background: blue;
+        width: 100%;
+        position: initial;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin: 0px;
+    }
+	/*El primer section*/
+	section{
+		border: 2px solid rgb(0, 0, 0);
+		width: 100%;
+		
+	}
+	.div-parrafo{
+		background-color: rgb(241, 121, 77);
+		border-radius: 1%;
+		width: 100%;
+	}
+	.contenidop{
+		margin: 0px 0px 0px 0px;
+	}
+	/*aside*/
+	.asideleft{
+		width: 360px;
+		background:rosybrown;
+		
+	}
+	.divaside{
+		position: relative;
+		width: 100%;
+		height: 200px;
+		background: red;
+	}
+	.iframevi{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	/*div de tablas de imagenes*/
+	img{
+		width: 100%;
+		height: 100%;
+	}
+	.divtabla{
+		width: 100%;
+		
+	}
+	.div-ul-li{
+		
+		color: rgba(0, 0, 0, 0.829);
+		 background: blue;
+		width: 33%;
+		text-align: center;
+	}
+	/*lo destacado*/
+	.imgdestacado{
+		width: 50%;
+	}
+	/*Noticias*/
+	.img-new{
+		width: 70%;
+		
+	}
+	.div-new-letra{
+		font-size: x-small;
+		color: rgb(15, 15, 15);
+	}
+	/*sugerencias*/
+	.textareas{
+		width: 80%;
+	}
+	.div-form{
+		width: 100%;
+	}
+	.div-sugerencias{
+		width:100%;
+		
+		text-align: center;
+		background: rgb(243, 57, 218);
+	}
+
+	.div-contacto{
+
+		text-align: left;
+		width: 100%;
+		background: rgb(151, 174, 194);
+		
+	}
+	.ancho{
+		width: 100%;
+	}
+	
+}
+/*-----------------------------------------------------------------*/
+/*aside{
+	float: right;
+	width: 360px;
+	height: 400px;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) 
+  }
+  .responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+  }
+
+
+
+
+
+}
+img{
+	width: 150px;
+	height: 210px;
+}
+.div-table{
+	background: darkorchid;
+	width: 610px;
+
+	
+	}
+	.ul-div{
+		width: 610px;
+		background: blue;
+
+	}
+	.div-ul{
+        background: yellow;
+        width: 610px;
+
+	}
+	.div-ul-li{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+----------------------------------*/
+/*.div-fra{
+   
+	width: 410px;
+	border: 5px solid black;
+	border-radius: 10%;
+	background: grey;
+	padding: 40px 0px 6px 0px;
+}
+.fra{
+	display: block;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	
+}
+
+
+@media(max-width: 360px ){
+	img{
+		height: 200px;
+		width: 98%;
+	}
+	.section-one{
+		margin-top: 250px;
+	}
+	aside{
+   		display: inline;
+	}
+	
+	.div-table{
+		background: chartreuse;
+		margin: auto;
+		width: 340px;
+	}
+	.linea{
+		display: inline;
+	}
+	--------FIRTS FRASE----------
+	.div-fra{
+		position: relative;
+		text-align: center;
+		width: 340px;
+		border-radius: 100px;
+		padding: 150px 0 200px 0px;
+	    
+		
+
+	}
+	.fra{
+		position: absolute;
+		text-align: center;
+	}
+	.div-ul-li{
+		padding-left: 5%;
+		padding-right: 5%;
+	
+	}
+	.div-ul{
+		margin: auto;
+		width: 340px;
+		background: aqua;
+	}
+}*/
+

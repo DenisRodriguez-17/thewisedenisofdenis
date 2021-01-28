@@ -1,0 +1,54 @@
+/*---------------Pagina de Usuario---------------------*/
+*{
+    margin: 0px;
+}
+.div-form{
+	width: 35%;
+	padding-top: 10%;
+	
+	margin: auto;
+	text-align: left;
+}
+.div-img{
+    width: 100%;
+	text-align: center;
+}
+.form-img{
+	width: 20%;
+	height: 20%;
+    border-radius: 50%;
+    
+	margin: auto;
+}
+.form-input{
+	width: 100%;
+	border-radius: 10%;
+}
+.form-enviar{
+    margin-left: 20%;
+    margin-right: 20%;
+	border-radius: 20%;
+	background: rgb(0, 0, 255);
+    animation: padding 0.2s;
+  
+}
+.form-enviar:hover{
+	padding: 10px;
+}
+.form-label{
+	font-size: x-large;
+	background: rgb(255, 255, 255);
+	border-radius: 10%;
+	color: rgb(0, 0, 0);
+	font-weight: 700;
+}
+
+@media(max-width:768px){
+    .div-form{
+        width: 80%;
+        padding-top: 10%;
+        
+        margin: auto;
+        text-align: left;
+    }
+}

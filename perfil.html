@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookwise</title>
+    <link rel="shortcut icon" href="imagenes/iconP.jpg" type="iconP.jpg">
+    <!-----------------CSS---------->
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-----------------Linrerías Js----------->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/metodo2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!--------Tabs-->
+    <script>
+        $(function(){
+            $("#tabs").tabs();
+        });
+    </script>
+</head>
+<body>
+    <!------------Inicio header y nav-->
+    <header>
+        <div class="">
+           <h1 class="book-wise">
+             BookWise
+           </h1>
+           <nav class="navbar navbar-expand-lg navbar-dark bg-dark letra-Nav">
+             <a href="#">
+               <img class="imgP" src="imagenes/iconP.jpg" >
+             </a>
+             <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+           <div class="collapse navbar-collapse" id="menu">
+             <ul class="navbar-nav ml-auto">
+               <li class="nav-item active">
+               <a href="index.html" class="nav-link">
+                 Inicio
+               </a>
+               </li>
+               <li class="nav-item active">
+               <a href="usuario.html" class="nav-link">
+                 Perfil
+               </a>
+               </li>
+               <li class="nav-item active dropdown">
+               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown10">
+                 Libros
+               </a>
+               <div class="dropdown-menu" aria-labelledby="dropdown10">
+                   <a class="dropdown-item" href="#">Aventura</a>
+                   <a class="dropdown-item" href="#">Romance</a>
+                   <a class="dropdown-item" href="#">Poema</a>
+                 </div>
+               </li>
+               <li class="nav-item active" >
+               <a href="#" class="nav-link">
+                 Autores
+               </a>
+               </li>
+               <li class="nav-item active">
+               <a href="#contacto" class="nav-link">
+                 Contactanos
+               </a> 
+               </li>
+             </ul>
+            <form>
+             <input type="search" name="buscar" value="Buscar">
+             <button class="boton-search" type="submit" >Buscar</button>
+            </form>
+           </div>
+           </nav>
+         </div>
+         </header>
+         <!------------------------------------------>
+         <br>
+         <!----------------Inicio del main-------------------->
+         <main>
+          <!---------------Primer section----->
+          <section class="section1">
+              <div id="tabs" class="div-ul-ul">
+                  <ul class="div-ul">
+                      <li class="ul-li" style="display: inline;">
+                          <a style="color: black;" href="#tabs-1">
+                              Te gustan
+                          </a>
+                      </li>
+                      <li class="ul-li" style="display: inline;">
+                          <a style="color: black;" href="#tabs-2">
+                              Comprados
+                          </a>
+                      </li>
+                  </ul>
+                  <div id="tabs-1">
+                       <table>
+                           <tr>
+                               <td>
+                                   <a href="#">
+                                  <img src="imagenes/Aventura/grandesaventuras.jpeg" alt="Las grandes aventuras" title="Las grandes aventuras">
+                                   </a>
+                                </td>
+                               <td>
+                                   <a href="#">
+                                  <img src="imagenes/Favoritos/ElDirarioDeAna.jpg" alt="El diario de Ana Frank" title="El diadrio de Ana Frank">
+                                   </a>
+                                </td>
+                               <td>
+                                   <a href="#">
+                                  <img src="imagenes/Poema/primerodepoeta.jpeg" alt="Primero de poeta" title="Primero de poeta">
+                                   </a>
+                                </td>
+                           </tr>
+                           <tr>
+                               <td>
+                                  <a href="#">
+                                      <img src="imagenes/Aventura/Loshijosdelreyvikingo.jpeg" alt="Los hijos del rey Vikingo" title="Los hijos del rey vikingo">
+                                  </a>
+                               </td>
+                               <td>
+                                  <a href="#">
+                                      <img src="imagenes/Romance/MalditoRomeo.jpeg" alt="Maldito Romeo" title="Maldito Romeo">
+                                  </a>
+                               </td>
+                               <td>
+                                   <a href="#">
+                                       <img src="imagenes/Romance/PorSiemprejamas.jpeg" alt="Por simepre jamas" title="Por siempre jamas">
+                                    </a>
+                                    </td>
+                           </tr>
+                       </table>
+                  </div>
+                  <div id="tabs-2" class="tabla-img">
+                        <table>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                    <img src="imagenes/Romance/MalditoRomeo.jpeg" alt="Maldito Romeo" title="Maldito Romeo">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                    <img src="imagenes/Romance/PidemeLoquequieras.jpeg" alt="Pideme lo que quieras" title="Pideme lo que quiera">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                    <img src="imagenes/Romance/PorSiemprejamas.jpeg" alt="Por simpre jamas" title="Por siempre jamas">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <img src="imagenes/Aventura/Loshijosdelreyvikingo.jpeg" alt="Los hijos del rey Vikingo" title="Los hijos del rey vikingo">
+                                    </a>
+                                 </td>
+                                 <td>
+                                    <a href="#">
+                                        <img src="imagenes/Romance/Adosmetrosdeti.jpeg" alt="A dos metro de ti" title="A dos metro de ti">
+                                    </a>
+                                 </td>
+                                 <td>
+                                     <a href="#">
+                                         <img src="imagenes/Poema/20Poemasdeamor.jpeg" alt="Veinte poemas de amor" title="Veinte poemas de amor">
+                                      </a>
+                                      </td>
+                            </tr>
+                        </table>
+                  </div>
+              </div>
+          </section>
+          <aside class="aside1">
+            <iframe class="iframe1" src="https://www.youtube.com/embed/dz5QIDis17k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </aside>
+         </main>
+        
+         <!----------------Inicio de footer-->
+         <footer>
+            <!------------------------------------->
+            <div class="ancho">
+                <div class="div-contacto col-lg-6">
+                        <h2 class="text-center">Contacto</h2>
+                  
+                    <div class="tel-con">
+                      <p>
+                         telefono: 9331580264.
+                      </p>
+                    </div>
+                      <div class="face-book face-con">
+                      <a href="#">
+                      <p>
+                        <img class="iconfacebook" src="imagenes/facebook-icon.svg.png">
+                        BookWise
+                      </p>
+                    </a>
+                    </div>
+                  <div class="ali con-con">
+                    <p>
+                      uriaselyuyo@gmail.com
+                    </p>
+                  </div>
+                  <div class="ali con-con">
+                    <p>
+                      Ejido la Chonita Cunduácan Tabasco
+                    </p>
+                  </div>
+                </div>
+                <!-------------------------------------->
+                  <div class="div-sugerencias ">
+                        <h2>Sugerencias</h2>
+                
+                        <form class="div-form">
+                        <textarea class="textareas">      
+                    </textarea>
+                    <br>
+                    <input class="enviar" type="button" value="Enviar">
+                        </form>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

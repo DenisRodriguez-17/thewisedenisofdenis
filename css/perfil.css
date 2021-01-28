@@ -1,0 +1,166 @@
+*{
+    margin: 0px;
+}
+body{
+    background-image: url("../imagenes/body.jpg");
+}
+.aside1{
+    float:right;
+    background: blue;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    margin-top: -430px;
+    margin-left: 700px;
+
+}
+.section1{
+    background: white;
+    margin-left: 50px;
+    width: 428px;
+}
+/* titilo de boowise, nav icon y boton*/
+.book-wise{
+	font-family: cursive;
+	text-shadow: 30px 5px 1px rgb(192, 180, 180);
+	 background: wheat;
+	 border: 10px solid rgb(255, 0, 200);
+	 border-radius: 30px;
+     
+}
+.imgP{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+}
+.boton-search{
+	border-radius: 15%;
+	background: blue;
+	animation: padding 0.2s;
+}
+.boton-search:hover{
+	padding: 5px;
+}
+/*Tablas con imagenes*/
+.div-ul-ul{
+    width: 100%;
+    margin: auto;
+    background: yellow;
+
+}
+.tabla-img{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.div-ul{
+    margin: auto;
+    background: red;
+    width: 100%;
+}
+img{
+	height: 200px;
+	width: 140px;
+}
+.ul-li{
+    
+    padding-left: 55px;
+    padding-right: 55px;
+    text-align: center;
+}
+/*-----Contactos--------*/
+.ancho{
+	width: 100%;
+	background: blue;
+}
+.div-contacto{
+
+	float: left;
+	width: 50%;
+	background: rgb(151, 174, 194);
+	
+}
+.iconfacebook{
+	
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+/*iframe video*/
+.iframe1{
+    width: 100%;
+    height: 100%;
+}
+/*------------sugerenciuas*/
+.div-sugerencias{
+	width:50%;
+	float: right;
+	text-align: center;
+	background: rgb(243, 57, 218);
+}
+.textareas{
+	width: 400px;
+	height: 148px;
+}
+.enviar{
+	border-radius: 30%;
+	background: rgb(0, 0, 255);
+	animation: padding 0.5s;
+}
+.enviar:hover{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+@media(max-width:768px){
+    .aside1{
+        float: none;
+        background: blue;
+        width: 100%;
+        position: initial;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin: 0px;
+    }
+    /*sugerencias*/
+	.textareas{
+		width: 80%;
+	}
+	.div-form{
+		width: 100%;
+	}
+	.div-sugerencias{
+		width:100%;
+		
+		text-align: center;
+		background: rgb(243, 57, 218);
+	}
+
+	.div-contacto{
+
+		text-align: left;
+		width: 100%;
+		background: rgb(151, 174, 194);
+		
+	}
+	.ancho{
+		width: 100%;
+    }
+    /*tabla de imagenes*/
+    .section1{
+        background: white;
+        width: 100%;
+        margin: 0px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .ul-li{
+        
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+
+}
